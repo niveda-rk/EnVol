@@ -1,0 +1,49 @@
+/* Styles that are applicable to the entire site etc */
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+/* Styles that are only applicable to the landing page etc */
+.bg-grid {
+  background-image: repeating-linear-gradient(0deg, rgb(245, 245, 245) 0px, rgb(245, 245, 245) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(245, 245, 245) 0px, rgb(245, 245, 245) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(131,0%,98%),hsl(131,0%,98%));
+}
+.bg-one {
+    background-image: linear-gradient(darkgrey, darkgrey);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-two {
+    background-image: linear-gradient(lightgrey, lightgrey);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-form {
+  margin-top: 15px;
+  float: right;
+  margin-right: 100px;
+}
+
+.button {
+  float:right;
+  background: lightgray;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor:pointer;
+  position: relative;
+  border: none;
+  
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .bg-one, .bg-two {
+      background-attachment: scroll;
+    }
+  }
