@@ -27,6 +27,8 @@
         margin-right: 100px;
       }
 
+      body { background: #2C2F33 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
       .navbar-brand
         {
           font-family: 'Lato', sans-serif;
@@ -37,24 +39,35 @@
         .navbar
         {
           font-family: 'Lato', sans-serif;
-          font-size: 30px;
+          font-size: 25px;
           margin: 0px;
-
+          background-color:#607D8B;
         }
 
         .navbar-nav > li{
-          padding-left:30px;
+          padding-left:50px;
         }
+
+        .div-bg {
+            background: #799AE0;
+        }
+
+        h1 {font-size: 70px !important;
+              font-weight: normal;
+              color:white
+             
+          }
+        
     </style>
   </head>
 
   <body>
         
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3 font-size=300px ">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 font-size=300px ">
       <a class="navbar-brand text-white font-weight-bold" href="#">EnVol</a>
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto ">
           <li class="nav-item active">
             <a class="nav-link text-white" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
@@ -73,6 +86,8 @@
     
     <br>
     <br>
+
+    
     <form class ="search-form">
       <input type="text" placeholder="Search">
       <button> Search</button>
@@ -81,42 +96,48 @@
     <br>
     <!-- section 2 -->
     <section class="pt-5 bg-grid" id="About">
-      <h1 class="text-dark text-center" style="font-size: 70px;">Upcoming Events</h1>
+      <h1 class="text-center text-white" style="font-size: 70px; color:white">All Events</h1><hr style="height:2px;border-width:0; color:white">
       <div class="box py-5">
           <div class="container">
               <div class="row mx-0">      
                   <!-- a grid of 12 units, with responsive elements in it -->
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
+                      <div class="box-part text-center text-white">
                           <div class="title">
                               <h4>Food Bank</h4>
                           </div>
-                          <div class="">
-                              <span>Description 1<br />Description 1</span>
+                          <br>
+                          <div class="text-white">
+                              <span>Collect and Raise Funds<br />for Food Distribution</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="FoodBank.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="FoodBank.html" role="button">Learn More</a>
                        </div>
                   </div>	 
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
+                      <div class="box-part text-center text-white">
                           <div class="title">
-                              <h4>Health</h4>
+                            <h4>Health</h4>
                           </div>
-                          <div class="text">
-                              <span>...<br />...</span>
+                          <br>
+                          <div class="text text-white">
+                              <span>Help healthcare workers<br />by participating in these events</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="health.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="health.html" role="button">Learn More</a>
                        </div>
                   </div>	 
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
-                          <div class="title">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
                               <h4>Education</h4>
                           </div>
-                          <div class="">
+                          <br>
+                          <div class="text-white">
                               <span>Teach and Learn<br />Something New</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="education.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="education.html" role="button">Learn More</a>
                       </div>
                   </div>
               </div>		
@@ -126,42 +147,47 @@
 
      <!-- section 2 -->
      <section class="pt-5 bg-grid" id="About">
-      <h1 class="text-dark text-center" style="font-size: 70px;">Company Events</h1>
+      <h1 class="text-center text-white" style="font-size: 70px; color:white">Company Events</h1><hr style="height:2px;border-width:0">
       <div class="box py-5">
           <div class="container">
-              <div class="row mx-0">      
-                  <!-- a grid of 12 units, with responsive elements in it -->
+              <div class="row mx-0">  
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
-                          <div class="title">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
                               <h4>Diversity and Inclusion</h4>
                           </div>
-                          <div class="">
+                          <br>
+                          <div class="text-white">
                               <span>Workshops and Programs<br />to promote inclusion</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="inclusion.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="inclusion.html" role="button">Learn More</a>
                        </div>
                   </div>	 
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
-                          <div class="title">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
                               <h4>Teamwork</h4>
                           </div>
-                          <div class="text">
-                              <span>...<br />...</span>
+                          <br>
+                          <div class="text text-white">
+                              <span>Build and Strengthen<br />Groupwork and Collaboration Spirit</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="teamwork.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="teamwork.html" role="button">Learn More</a>
                        </div>
                   </div>	 
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
-                      <div class="box-part text-center">
-                          <div class="title">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0 text-white">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
                               <h4>Community Development</h4>
                           </div>
+                          <br>
                           <div class="">
                               <span>Teach and Learn<br />Something New</span>
                           </div>
-                          <a class="btn btn-outline-dark btn-sm m-3" href="education.html" role="button">Learn More</a>
+                          <br>
+                          <a class="btn btn-outline-light" href="education.html" role="button">Learn More</a>
                       </div>
                   </div>
               </div>		
