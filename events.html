@@ -22,46 +22,49 @@
   
     <style>
       .search-form {
-          margin-top: 15px;
-          float: right;
-          margin-right: 100px;
+        margin-top: 15px;
+        float: right;
+        margin-right: 100px;
+      }
+
+      .navbar-brand
+        {
+          font-family: 'Lato', sans-serif;
+          font-size: 50px;
+          margin: 0px;
         }
-        .input[type = text] {
-            padding: 7px;
-            border: none;
-            font-size:16px;
-            font-family: sans-serif;
+
+        .navbar
+        {
+          font-family: 'Lato', sans-serif;
+          font-size: 30px;
+          margin: 0px;
+
         }
-        .button {
-          float:right;
-          background: lightgray;
-          color: white;
-          border-radius: 0 5px 5px 0;
-          cursor:pointer;
-          position: relative;
-          border: none;
-          font-size: 16px;
+
+        .navbar-nav > li{
+          padding-left:30px;
         }
     </style>
   </head>
 
   <body>
         
-    <nav class="navbar navbar-expand-lg navbar-light bg-light height=10em">
-      <a class="navbar-brand" href="#">EnVol</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3 font-size=300px ">
+      <a class="navbar-brand text-white font-weight-bold" href="#">EnVol</a>
       
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#profile">Profile<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#profile">Profile<span class="sr-only">(current)</span></a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#Login">Sign In | Register</a>
+            <a class="nav-link text-white" href="#Sign Out">Sign Out</a>
           </li>         
         </ul>
         
