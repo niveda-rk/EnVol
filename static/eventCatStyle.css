@@ -1,0 +1,40 @@
+.search-form {
+    margin-top: 15px;
+    float: right;
+    margin-right: 100px;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  body { background: rgba(14, 28, 34, 0.9) !important; 
+    font-family: 'Titillium Web', sans-serif;} /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+  .navbar-brand
+    {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 20px;
+      margin: 0px;
+    }
+
+    .navbar
+    {
+      font-size: 20px;
+      margin: 0px;
+      background-color:#205da1;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    .navbar-nav > li{
+      padding-left:50px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    .div-bg {
+        background: #799AE0;
+    }
+
+    h1 {font-size: 70px !important;
+          font-weight: normal;
+          color:white;
+          font-family: 'Titillium Web', sans-serif;    
+      }
+  

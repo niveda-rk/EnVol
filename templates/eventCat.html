@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Website Title -->
+    <title>Upcoming Events</title>
+
+    <!-- Bootstrap CSS via CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='eventCatStyle.css') }}">
+  
+  </head>
+
+  <body>
+        
+    <nav class="navbar navbar-expand-lg navbar-light py-3 font-size=300px ">
+      <a class="navbar-brand text-white font-weight-bold font-size=350px" href="/About/" style="font-size: 25px;">EnVol</a>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/upcoming-events/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/upcoming-events/profile/">Profile<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/upcoming-events/newEvent">Create Event<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="/">Sign Out</a>
+          </li>         
+        </ul>
+        
+      </div>
+    </nav>
+    
+    <br>
+
+    <h3 class="text-center"style="color:white">Where <b>individuals</b> and <b>companies</b> 
+      <br>come together to improve the <br></h3><h2 class="text-center" style="color: #607D8B"><b>world</b></h2>
+    <form class ="search-form">
+      <input type="text" placeholder="Search">
+      <button> Search</button>
+    </form>
+    <!-- section 2 -->
+    <section class="pt-5 bg-grid" id="About">
+      <h1 class="text-center text-white" style="font-size: 70px; color:white">All Events</h1><hr style="height:2px;border-width:0; color:white">
+      <div class="box py-5">
+          <div class="container">
+              <div class="row mx-0">      
+                  <!-- a grid of 12 units, with responsive elements in it -->
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
+                      <div class="box-part text-center text-white">
+                          <div class="title">
+                              <h4>Food Bank</h4>
+                          </div>
+                          <br>
+                          <div class="text-white">
+                              <span>Collect and Raise Funds<br />for Food Distribution</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/FoodBank/" role="button">Learn More</a>
+                       </div>
+                  </div>	 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
+                      <div class="box-part text-center text-white">
+                          <div class="title">
+                            <h4>Health</h4>
+                          </div>
+                          <br>
+                          <div class="text text-white">
+                              <span>Help healthcare workers<br />by participating in these events</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/health/" role="button">Learn More</a>
+                       </div>
+                  </div>	 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
+                              <h4>Education</h4>
+                          </div>
+                          <br>
+                          <div class="text-white">
+                              <span>Teach and Learn<br />Something New</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/Education/" role="button">Learn More</a>
+                      </div>
+                  </div>
+              </div>		
+          </div>
+      </div>
+  </section>
+
+  <img src="{{ url_for('static',filename='boxes.jpg') }}" width="400" height="300" style=" margin-left: 150px;" >
+  <img src="{{ url_for('static',filename='food.jpg') }}" width="400" height="300" style=" margin-left: 0;" >
+  <img src="{{ url_for('static',filename='workshop.jpg') }}" width="400" height="300" style=" margin-left: 0;" >
+
+
+     <!-- section 2 -->
+     <section class="pt-5 bg-grid" id="About">
+      <h1 class="text-center text-white" style="font-size: 70px; color:white">Company Events</h1><hr style="height:2px;border-width:0">
+      <div class="box py-5">
+          <div class="container">
+              <div class="row mx-0">  
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
+                              <h4>Diversity and Inclusion</h4>
+                          </div>
+                          <br>
+                          <div class="text-white">
+                              <span>Workshops and Programs<br />to promote inclusion</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/inclusion.html/" role="button">Learn More</a>
+                       </div>
+                  </div>	 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
+                              <h4>Teamwork</h4>
+                          </div>
+                          <br>
+                          <div class="text text-white">
+                              <span>Build and Strengthen<br />Groupwork and Collaboration Spirit</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/teamwork.html/" role="button">Learn More</a>
+                       </div>
+                  </div>	 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-5 mx-0 text-white">
+                      <div class="box-part text-center text-white">
+                          <div class="title text-white">
+                              <h4>Community Development</h4>
+                          </div>
+                          <br>
+                          <div class="">
+                              <span>Teach and Learn<br />Something New</span>
+                          </div>
+                          <br>
+                          <a class="btn btn-outline-light" href="/upcoming-events/education.html/" role="button">Learn More</a>
+                      </div>
+                  </div>
+              </div>		
+          </div>
+      </div>
+  </section>
+
+    <br>
+    <br>
+
+    <footer>
+      <img src="{{ url_for('static',filename='manual2.jpg') }}" width="400" height="300" style=" margin-left: 150px;" >
+      <img src="{{ url_for('static',filename='women.jpg') }}" width="400" height="300" style=" margin-left: 0;" >
+      <img src="{{ url_for('static',filename='manual.jpg') }}" width="400" height="300" style=" margin-left: 0;" >
+      
+
+
+    </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </body>
+</html>
